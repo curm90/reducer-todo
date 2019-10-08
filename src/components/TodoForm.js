@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const TodoForm = ({ addTodo }) => {
+const TodoForm = ({ addTodo, filterCompleted }) => {
   const [newTodo, setNewTodo] = useState({ item: '' });
 
   const handleInputChange = e => {
@@ -24,6 +24,7 @@ const TodoForm = ({ addTodo }) => {
           value={newTodo.item}
         />
         <button type='submit'>Add Todo</button>
+        <button onClick={filterCompleted}>Clear Completed</button>
       </form>
     </div>
   );
