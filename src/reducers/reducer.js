@@ -8,7 +8,8 @@ function reducer(state, action) {
           {
             id: Date.now(),
             item: action.payload.item,
-            completed: false
+            completed: false,
+            dueDate: action.payload.dueDate
           }
         ]
       };
@@ -37,17 +38,20 @@ const initialState = {
     {
       id: 3892987589,
       item: 'Learn about reducers',
-      completed: false
+      completed: false,
+      dueDate: '10-19-19'
     },
     {
       id: 234234234,
       item: 'Learn about redux',
-      completed: false
+      completed: false,
+      dueDate: ''
     },
     {
       id: 123123311,
       item: 'Learn about actions',
-      completed: false
+      completed: false,
+      dueDate: ''
     }
   ]
 };

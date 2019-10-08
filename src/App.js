@@ -23,8 +23,8 @@ function App() {
 
   return (
     <div className='App'>
-      <TodoList todos={state.todos} toggleCompleted={toggleCompleted} />
       <TodoForm addTodo={addTodo} filterCompleted={filterCompleted} />
+      <TodoList todos={state.todos} toggleCompleted={toggleCompleted} />
     </div>
   );
 }
