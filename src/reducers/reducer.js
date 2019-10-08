@@ -1,11 +1,11 @@
-export function reducer(state, action) {
+function reducer(state, action) {
   switch (action.type) {
     default:
       return state;
   }
 }
 
-export const initialState = [
+const initialState = [
   {
     item: 'Learn about reducers',
     completed: false,
@@ -22,3 +22,5 @@ export const initialState = [
     id: 123123311
   }
 ];
+
+export { initialState, reducer };

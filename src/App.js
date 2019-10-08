@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useReducer } from 'react';
+import { reducer, initialState } from './reducers/reducer';
+import TodoList from './components/TodoList';
 
 function App() {
+  const [todos, dispatch] = useReducer(reducer, initialState);
+
   return (
     <div className='App'>
-      <h1>Hello World!</h1>
+      <TodoList todos={todos} />
     </div>
   );
 }
